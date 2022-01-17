@@ -1,0 +1,39 @@
+Create TABLE clientes(
+    NCUENTA varchar(20),
+    PIN varchar(9),
+    NOMBRE varchar(50),
+    TELEFONO varchar(9),
+    Correo varchar(20),
+    SALARIO Double,
+    PRIMARY KEY (NCUENTA)
+    );
+
+create table transacciones(
+    NTransaccion int,
+	num_cuenta_envia varchar(20),
+	num_cuenta_recibe varchar(20),
+	cantidad decimal(9,2),
+	fecha_transaccion date,
+	PRIMARY KEY (num_cuenta_envia , num_cuenta_recibe ,NTransaccion ),
+	FOREIGN KEY (num_cuenta_envia) REFERENCES clientes(NCuenta)
+		ON DELETE CASCADE ON UPDATE CASCADE,
+	FOREIGN KEY (num_cuenta_recibe) REFERENCES clientes(NCuenta)
+		ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+Create TABLE Admin(
+    NCUENTA varchar(20),
+    PIN varchar(9),
+    NOMBRE varchar(50),
+    PRIMARY KEY (NCUENTA)
+    );
+    
+Create TABLE Cuentas_por_aprobar(
+    NCUENTA varchar(20),
+    PIN varchar(9),
+    NOMBRE varchar(50),
+    TELEFONO varchar(9),
+    Correo varchar(20),
+    SALARIO Double,
+    PRIMARY KEY (NCUENTA)
+    );

@@ -1,0 +1,26 @@
+h1{
+    font-size: 30px;
+    text-decoration: underline;
+    border-collapse: collapse;
+}
+h2{
+    background-color: #7baaf7;
+    font-size : 20px;
+    border-collapse: collapse;
+}
+h3{
+    background-color:#c6dafc;
+    font-size : 15px;
+    color : #fff;
+    border-collapse: collapse;
+}
+p{
+    font-size: 15px;
+    border-collapse: collapse;
+    text-align: justify;
+}
+body{
+    margin-left: 15%;
+    margin-right: 15%;
+    border-collapse: collapse
+}

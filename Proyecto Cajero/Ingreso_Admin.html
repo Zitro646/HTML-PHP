@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">   
+        <link rel="stylesheet" type="text/css" href="general.css">
+
+    </head>   
+
+    <title>Ingreso de cuenta</title>    
+
+    <body>
+       <div id="nng">
+        <div id="ing">
+            <form name="ingreso" action="sesion_admin.php" method="get" >
+
+                    <p>Numero de Cuenta del Admin</p>
+                    <input type="text" name="ID" >    
+                    <p>Contraseña de Admin</p>
+                    <input type="password" name="PIN" placeholder="Contraseña...">
+                    <button type="button" name="show_hide"  
+                             onclick="if(PIN.type=='text')
+                                      PIN.type='password';
+                                      else
+                                      PIN.type='text';">Mostrar Contraseña</button>
+                    <p> </p>
+                    
+                  <div id="xng">
+                     <br><input type="submit" value="Ingresar"><br>
+                    
+                </div>
+                   
+            </form>
+            <form  action="Ingreso_Usuario.html">
+                <br><input type="submit" value="No soy Administrador"><br>
+            </form>
+             
+            </div>
+        </div>
+    </body>    
+</html>

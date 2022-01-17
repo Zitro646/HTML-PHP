@@ -1,0 +1,46 @@
+h1{
+  color: #333;
+  font-size : 20px;
+  font-family;
+}
+h2{
+    color: #666;
+    font-size: 16px
+}
+p¨{
+    color: #000
+    
+}
+table,tr,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+ 
+#Neg{
+    background-color: #333;
+    color: #fff
+}
+
+#Neg2{
+    background-color: #333;
+    color: #fff               
+}
+
+#Neg3 {
+    background-color:#ccc ;
+    color : #000
+}
+
+
+
+
+
